@@ -54,7 +54,7 @@ const Home = () => {
         <Content>
           <Name>Hey there, I'm Ben 👋</Name>
           <Job>I'm a Full Stack Developer</Job>
-          <Description>If you'd like to find out more, keep scrolling.</Description>
+          <Description>Keep scrolling to check out my portfolio...</Description>
         </Content>
       </Container>
     </Section>

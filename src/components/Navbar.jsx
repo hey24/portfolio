@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Section = styled.div`
   position: sticky;
   background: linear-gradient(to right, #4b6cb7, #182848);
-  opacity: 0.9;
+  opacity: 1;
   top: 0;
   display: flex;
   justify-content: center;
