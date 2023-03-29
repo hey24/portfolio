@@ -30,6 +30,7 @@ flex: 1;
   width: 300px
 `
 const About = styled.p`
+
 `
 
 

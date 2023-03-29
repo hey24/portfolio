@@ -17,7 +17,7 @@ const Image = styled.img`
   width: 3rem;;
   height: 3rem;;
   margin-right: 1rem;
-  transform: translateY(0.2rem);
+  transform: translateY(0.6rem);
 
   @media only screen and (max-width: 768px) {
     display: none;

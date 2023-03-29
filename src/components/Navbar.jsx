@@ -8,6 +8,7 @@ const Section = styled.div`
   top: 0;
   display: flex;
   justify-content: center;
+  z-index: 10;
 `
 const Container = styled.div`
 width: 1400px
