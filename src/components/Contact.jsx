@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Section = styled.div`
-  height: 100vh;
+  height: 75vh;
 `
 
 const Container = styled.div`
@@ -30,6 +30,10 @@ const Input = styled.input`
   background-color: lightgray;
   border-radius: 0.2rem;
   border: none;
+
+  &:focus{
+    outline: none;
+  }
 `
 
 const TextArea = styled.textarea`
@@ -37,6 +41,10 @@ const TextArea = styled.textarea`
   background-color: lightgray;
   border-radius: 0.2rem;
   border: none;
+
+  &:focus{
+    outline: none;
+  }
 `
 
 const Button = styled.button`

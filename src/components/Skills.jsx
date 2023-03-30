@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import TechStack from './TechStack'
-import { useRef } from 'react';
 
 const Section = styled.div`
-height: 100vh;
+height: 75vh;
 display: flex;
 justify-content: center;
 align-items: center;
