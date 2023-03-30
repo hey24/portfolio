@@ -1,5 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Section = styled.div`
   height: 100vh;
@@ -65,24 +66,38 @@ const Button = styled.button`
   };
 `
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-}
 
 const Contact = () => {
+  const ref = useRef();
+  const [success,setSuccess] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_4wpkqz4', 'template_wyil4sp', ref.current, 'x1vJGn1cfn7US4eyz')
+        .then((result) => {
+            console.log(result.text);
+            setSuccess(true)
+        }, (error) => {
+            console.log(error.text);
+            setSuccess(false)
+        });
+  };
+
   return (
     <Section id='contact'>
       <Container>
-          <Form onSubmit={handleSubmit}>
+          <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Me</Title>
-            <Input placeholder="Name" />
-            <Input placeholder="Email" />
-            <TextArea placeholder="Write your message" rows={10} />
+            <Input placeholder="Name" name="name" />
+            <Input placeholder="Email" name="email" />
+            <TextArea placeholder="Write your message" name="message" rows={10} />
             <Button type="submit">Send</Button>
+            {success && "Your message has been sent. I will get back to as soon as possible!"}
           </Form>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
