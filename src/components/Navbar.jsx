@@ -82,9 +82,11 @@ const ListLink = styled.a`
     color: #ffffffbd;
   }
 `
-const Button = styled.button`
+const Button = styled.a`
+  text-decoration: none;
+  text-align: center;
   width: 6rem;
-  padding: 0 0.2rem;
+  padding: 0.2rem 0.2rem;
   margin: 1rem;
   background-color: #8f79d8;
   cursor: pointer;
@@ -95,9 +97,12 @@ const Button = styled.button`
   &:hover{
     transition: 0.5s;
     background-color: #8f79d8bd;
+    color: #ffffffbd;
     transform: translateY(2px);
-  }
+  };
 `
+
+
 
 const Navbar = () => {
   return (
@@ -108,11 +113,11 @@ const Navbar = () => {
           <a href="home"><LogoSmall src="./img/ben-logo.png" /></a>
           <NavLinks>
             <LinksList>
-              <ListItem><ListLink href="">About</ListLink></ListItem>
-              <ListItem><ListLink href="">Skills</ListLink></ListItem>
-              <ListItem><ListLink href="">Projects</ListLink></ListItem>
+              <ListItem><ListLink href="#about">About</ListLink></ListItem>
+              <ListItem><ListLink href="#skills">Skills</ListLink></ListItem>
+              <ListItem><ListLink href="#projects">Projects</ListLink></ListItem>
             </LinksList>
-            <Button>Contact</Button>
+            <Button href="#contact">Contact<br></br>Me!</Button>
           </NavLinks>
         </NavItems>
       </Container>

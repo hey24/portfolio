@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import TechStack from './TechStack'
+import { useRef } from 'react';
 
 const Section = styled.div`
 height: 100vh;
@@ -10,7 +11,6 @@ align-items: center;
 `
 
 const Container = styled.div`
-
 display: flex;
 justify-content: space-between;
 gap: 3rem;
@@ -33,7 +33,6 @@ const About = styled.p`
 
 `
 
-
 const Title = styled.h1`
   font-size: 2rem;
   font-weight: 200;
@@ -46,12 +45,12 @@ const techStack = {
   'React': '../../public/img/React-01.png',
   'Ruby': '../../public/img/Ruby-01.png',
   'CSS': '../../public/img/CSS-3-01.png'
-}
+};
 
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="skills">
       <Container>
         <Left>
           <TechStack techStack={techStack} />

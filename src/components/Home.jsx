@@ -7,9 +7,10 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
 `
 const Container = styled.div`
+
 
 `
 const Content = styled.div`
@@ -43,21 +44,31 @@ const Job = styled.h2`
 `
 const Description = styled.p`
 `
-
+const PhotoContainer = styled.div`
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  background-image: url("../../public/img/profile.jpeg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+  position: absolute;
+  top: 8rem;
+  right: 12rem;
+`
 
 
 const Home = () => {
   return (
-    <Section id="Home">
-      <Section>
+    <Section id="about">
       <Container>
+        <PhotoContainer></PhotoContainer>
         <Content>
           <Name>Hey there, I'm Ben 👋</Name>
           <Job>I'm a Full Stack Developer</Job>
           <Description>Keep scrolling to check out my portfolio...</Description>
         </Content>
       </Container>
-    </Section>
     </Section>
   )
 }
