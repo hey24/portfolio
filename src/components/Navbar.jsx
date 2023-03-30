@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Section = styled.div`
   position: sticky;
-  background: linear-gradient(to right, #4b6cb7, #182848);
+  background: linear-gradient(to right, #00467f, #a5cc82);
   opacity: 1;
   top: 0;
   display: flex;
@@ -11,7 +11,7 @@ const Section = styled.div`
   z-index: 10;
 `
 const Container = styled.div`
-width: 1400px
+width: 1400px;
 `
 const NavItems = styled.div`
 display: flex;
@@ -65,6 +65,7 @@ list-style: none;
 const ListItem = styled.li`
   cursor: pointer;
   text-decoration: none;
+  text-shadow: 1px 1px 4px gray;
 
   &:hover{
     transition: 0.5s;
@@ -76,6 +77,7 @@ const ListLink = styled.a`
   color: white;
   cursor: pointer;
   text-decoration: none;
+  text-shadow: 1px 1px 4px gray;
 
   &:hover{
     transition: 0.5s;
@@ -88,15 +90,16 @@ const Button = styled.a`
   width: 6rem;
   padding: 0.2rem 0.2rem;
   margin: 1rem;
-  background-color: #8f79d8;
+  background-color: #27637F;
   cursor: pointer;
   color: white;
   border: none;
   border-radius: 0.2rem;
+  box-shadow: 1px 1px 4px darkgray;
 
   &:hover{
     transition: 0.5s;
-    background-color: #8f79d8bd;
+    background-color: #00467fed;
     color: #ffffffbd;
     transform: translateY(2px);
   };

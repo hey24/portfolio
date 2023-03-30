@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Section = styled.div`
-  height: 75vh;
+  height: 100vh;
 `
 
 const Container = styled.div`
+  margin-top: 4rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -50,7 +51,7 @@ const TextArea = styled.textarea`
 const Button = styled.button`
   width: 100%;
   padding: 0.5rem;
-  background-color: #8f79d8;
+  background-color: #00467F;
   cursor: pointer;
   color: white;
   border: none;
@@ -58,7 +59,7 @@ const Button = styled.button`
 
   &:hover{
     transition: 0.5s;
-    background-color: #8f79d8bd;
+    background-color: #00467FDB;
     color: #ffffffbd;
     transform: translateY(2px);
   };

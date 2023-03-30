@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Navbar from "./Navbar"
 
 const Section = styled.div`
-  height: 75vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,8 +113,8 @@ const Home = () => {
         <SocialContainer>
           <p>Check out my LinkedIn and GitHub:</p>
           <SocialLinks>
-            <Social href="https://www.linkedin.com/in/ben-h-/"><SocialImg src="./img/linkedin.svg" alt="" /></Social>
-            <Social href="https://github.com/hey24"><SocialImg src="./img/square-github.svg" alt="" /></Social>
+            <Social href="https://www.linkedin.com/in/ben-h-/"><SocialImg src="./img/linkedin-white.png" alt="" /></Social>
+            <Social href="https://github.com/hey24"><SocialImg src="./img/github-white.png" alt="" /></Social>
           </SocialLinks>
         </SocialContainer>
       </Container>

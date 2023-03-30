@@ -26,7 +26,7 @@ const Right = styled.div`
 flex: 1;
   display: flex;
   flex-direction: column;
-  width: 300px
+  width: 300px;
 `
 const About = styled.p`
 

@@ -8,7 +8,7 @@ import styled from "styled-components"
 const Container = styled.div`
   color: white;
   height: 100vh;
-  background: linear-gradient(to right, #4b6cb7, #182848);
+  background: linear-gradient(to right, #00467f, #a5cc82);;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
