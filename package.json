@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://hey24.github.io/portfolio",
+  "homepage": "https://hey24.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "predeploy": "yarn run build",
