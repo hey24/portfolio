@@ -65,7 +65,6 @@ list-style: none;
 const ListItem = styled.li`
   cursor: pointer;
   text-decoration: none;
-  text-shadow: 1px 1px 4px gray;
 
   &:hover{
     transition: 0.5s;
@@ -77,7 +76,6 @@ const ListLink = styled.a`
   color: white;
   cursor: pointer;
   text-decoration: none;
-  text-shadow: 1px 1px 4px gray;
 
   &:hover{
     transition: 0.5s;
@@ -95,7 +93,6 @@ const Button = styled.a`
   color: white;
   border: none;
   border-radius: 0.2rem;
-  box-shadow: 1px 1px 4px darkgray;
 
   &:hover{
     transition: 0.5s;
